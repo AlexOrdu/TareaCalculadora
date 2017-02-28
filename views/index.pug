@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  p Click en el boton para evaluar
+
+  form(method='post', action='/eval')
+    input(name="doeval", type="text")
+    input(type="submit", value="aceptar")
+    p La respues es: #{result}
